@@ -1,44 +1,64 @@
-<form>
-  <div class="form-group">
-    <label>Company Name:</label>
-    <input type="text" class="form-control">
-    </div>
-    
-    <div class="form-group">
-      <label>Post :</label>
-      <input type="text" class="form-control">
-    </div>
 
-      <div class="form-group">
-        <label>Gender:</label>
-        <form action="">
-          <input type="radio" name="gender" value="male"> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
+  <section class="jobseek bg-cover" style="background-image: url(assets/images/abc.jpg);">
+    <div class = "container">
+      <div class="wrapper">
+        <form>
+          <div class="form-group">
+            <h3>Company's Information</h3>
+            <div class="row">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Company Name">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Post">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <h3 style="display: inline-block; margin-right: 30px;">Gender</h3>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Other</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <h4> Education</h4>
+                <input type="text" class="form-control" placeholder="Maximum level">
+              </div>
+              <div class="col">  
+                <h4>Experience</h4>
+                <input type="number" class="form-control" placeholder="In Years">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <h4>Skills</h4>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <div class="col">  
+                <h4>Languages</h4>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+          </div>      
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"><h3>Description</h3></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-
-        <div class="form-group">
-          <label>Education:</label>
-          <input type="text" class="form-control">
-         </div>
-         <form>
-          <div class="form-group">
-            <label>Experience:</label>
-            <input type="text" class="form-control">
-            </div>
-            
-            <div class="form-group">
-              <label> Skill:</label>
-              <input type="test" class="form-control">
-            </div>
-        
-              <div class="form-group">
-                <label>Languages:</label>
-                <input type="text" class="form-control">
-              </div>
-        
-                <div class="form-group">
-                  <label>Description:</label>
-                  <input type="textarea" class="form-control">
-                 </div>
+    </div>
+  </section>
