@@ -1,18 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { JobseekerService } from '../jobseeker.service';
 
 @Component({
   selector: 'app-jobseeker',
   templateUrl: './jobseeker.component.html',
   styleUrls: ['./jobseeker.component.css']
 })
-export class JobseekerComponent implements OnInit {
-
-  // constructor(private jobseekerservice:JobseekerService) {
-  //   this.jobseekerservice.
-  // }
-
-  ngOnInit() {
-  }
+export class JobseekerComponent implements OnInit{
+  
+ ngOnInit(){
+   
+ }
 
 }

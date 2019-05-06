@@ -1,5 +1,5 @@
 
-    <section class="jobseek bg-cover" style="background-image: url(assets/images/abcd.jpg);">
+    <section class="jobseek bg-cover" class="image">
       <div class = "container">
         <div class="wrapper">
           <form>
@@ -78,12 +78,39 @@
               </div>
             <div class="form-group">
             <h3>Skills</h3>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="">
+            <div class="container">
+		
+              <input type="radio" class="radio-hide" name="progress" value="ten" id="ten" checked>
+              <label class="label-text" for="ten">Low</label>
+              
+              <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty">
+              <label class="label-text" for="fifty">Medium</label>
+      
+              <input type="radio" class="radio-hide" name="progress" value="onehundred" id="onehundred">
+              <label class="label-text" for="onehundred">High</label>
+              <div class="progress">
+                <div class="progress-bar"></div>
               </div>
             </div>
           </div>
+
+          <div class="form-group">
+              <h3>Interactivity</h3>
+              <div class="container">
+                  <input type="radio" class="radio-hide" name="progress" value="twentyfive" id="twentyfive">
+                  <label class="label-text" for="twentyfive">Low</label>
+                  
+                  <input type="radio" class="radio-hide" name="progress" value="sixty" id="sixty">
+                  <label class="label-text" for="sixty">Medium</label>
+          
+                  <input type="radio" class="radio-hide" name="progress" value="ninetyfive" id="ninetyfive">
+                  <label class="label-text" for="ninetyfive">High</label>
+                  <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+              </div>
+          </div>
+
           <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
