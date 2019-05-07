@@ -14,11 +14,11 @@
 .jobseeker form .row{
 	margin-bottom: 30px;
 }
-.image{
-	background-image: url("E:\ApplicantFiltering\applicant-filtering-system\images\abcd.jpg");
-}
+/* .image{
+	background-image: url("D:\Documents\Downloads\cvfiltering\Frontend\applicant-filtering-system\images\abcd.jpg");
+} */
 /*radio button progress bar*/
-@charset "utf-8";
+/* @charset "utf-8"; */
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Boogaloo');
