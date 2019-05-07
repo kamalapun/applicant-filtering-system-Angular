@@ -1,1 +1,219 @@
 /* You can add global styles to this file, and also import other style files */
+/* #Media Queries
+================================================== */
+ 	
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width:767px) {
+    /*header*/
+    header .navbar .navbar-nav{ 
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width:1060px) {
+
+}
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width:960px) {
+
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width:767px) {
+ 
+}
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width:480px) and (max-width:767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width:479px) {
+
+
+}
+/* 
+body{
+	font-family: ;
+	font-size:;
+	color:;
+} */
+
+/* h1, h2, h3, h4, h5, h6{
+	font-family: 
+} */
+
+img{
+	max-width:100%;
+}
+ul{
+	list-style: none;
+	padding-left: 0px;
+}
+.bg-cover{
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.section-title h3{
+	color: #3e606b;
+	font-size: 40px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	position: relative;
+	text-align :center;
+}
+.section-title h3:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;					  /*     for taking     */
+    right: 0px;					 /*         it         */
+    margin: 0 auto; 			/*	      center      */
+    height: 1px;
+    width: 40px;
+    background-color: #3e606b;
+}
+/*-------------------------------------------------
+-----------------------Header----------------------
+--------------------------------------------------*/
+header li:hover{
+	cursor: pointer;
+}
+
+
+/*-------------------------------------------------
+-----------------------Banner----------------------
+--------------------------------------------------*/
+.banner{
+	height: 525px;
+	position: relative;
+}
+.banner .banner-details{
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	text-align: center;
+	padding: 100px 50px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+
+}
+.banner .banner-details h2{
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------------
+-----------------------footer----------------------
+--------------------------------------------------*/
+.footer-bs {
+    background-color: #3c3d41;
+	padding: 60px 40px;
+	color: rgba(255,255,255,1.00);
+	margin-bottom: 0px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+	.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+
+
+
+/*-------------------------------------------------
+-----------------------jobseeker.html---------------
+--------------------------------------------------*/
+.jobseek{
+	padding: 100px 0;
+}
+.jobseek .wrapper{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+.jobseek form{
+	padding: 50px 0;
+}
+.jobseek form .row{
+	margin-bottom: 30px;
+}
+/*-------------------------------------------------
+-----------------------jobpost.html-----------------
+--------------------------------------------------*/
+.jobpost{
+
+}
+.postjob .wrapper{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px;
+}
+.postjob form{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}.postjob form .row{
+	margin-bottom: 30px;
+}

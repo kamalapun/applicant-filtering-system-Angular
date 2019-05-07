@@ -1,0 +1,16 @@
+.jobseeker{
+	padding: 100px 0;
+}
+.jobseeker .wrapper{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px 30px;
+	width: 70%;
+	margin: 0 auto;
+}
+.jobseeker form{
+	padding: 30px 0;
+}
+
+.jobseeker form .row{
+	margin-bottom: 30px;
+}

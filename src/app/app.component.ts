@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'applicant-filtering-system';
+  router: any;
+  
+  // gotoJobseeker(){
+  //  this.router.navigate([job]);
+  // }
 }
