@@ -1,9 +1,9 @@
 .image{
-    background-image: url("E:\ApplicantFiltering\applicant-filtering-system\images\abc.jpg");
+    background-image: url('abc.jpg');
 }
 
 /*radio button progress bar*/
-@charset "utf-8";
+/* @charset "utf-8"; */
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Boogaloo');
