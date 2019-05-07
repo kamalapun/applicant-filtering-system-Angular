@@ -9,4 +9,33 @@
 </header>
 </div>
 
-<router-outlet></router-outlet>
+</div>
+ <!-- <div class="row">
+  <div class="col-md-5">
+    <router-outlet></router-outlet>
+   <div class="col-md-5"> -->
+    <!-- <app-jobseeker></app-jobseeker>
+    <app-login></app-login>
+    <app-postjob></app-postjob> 
+  </div> 
+ </div> -->
+
+  <div>
+    <nav class="navbar navbar-dark bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="container">
+            <h1 style="font-family:Righteous;font-size:18px;"> Applicant Filtering System</h1>   
+            <span style="cursor:pointer;" routerLink="home">Home</span>
+            <span style="cursor:pointer;" routerLink="aboutus">About us</span> 
+             <span style="cursor:pointer;" routerLink="jobseeker">Jobseeker</span> 
+             <span style="cursor: pointer;"routerLink="postjob">Postjob</span>
+             <span style="cursor:pointer;" routerLink="login">Sign up</span> 
+        </div>
+      </nav>
+    </div>
+
+        <div>
+          <router-outlet></router-outlet>
+        </div>
