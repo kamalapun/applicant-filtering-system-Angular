@@ -1,112 +1,119 @@
-<div class="container-fluid">
-  <h1>Applicant Filtering System</h1>
-  <form action=""> 
-    <div class="form-group">
-      <hr>
-      <label>Name:</label>
-      <input type="text" class="form-control">
-      </div>
-     
 
-      <div class="form-group">
-          <label>Gender:</label>
-      <form action="">
-        <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other
-      </form>
-    </div>
-      
-      <div class="form-group">
-        <label>Mailing address:</label>
-        <input type="text" class="form-control">
-      </div>
-  
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" class="form-control">
-        </div>
-  
-          <div class="form-group">
-            <label>Telephone:</label>
-            <input type="tel" class="form-control">
-           </div>
-           
-           
-           <div class="form group">
-        <!-- <label>Education</label>
-            <table class=>
-              <th>Degree</th>
-              <th>Year(BS)</th>
-              <th>College</th>
-            </table>
-            <table style="width:100%" border:10>
-                <tr>
-                  <th>Degree</th>
-                  <th>Year(BS)</th>
-                  <th>College</th>
-                </tr>
-                </table>-->
-                  <label>Education</label> 
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                          <th>Degree</th>
-                          <th>Year(BS)</th>
-                          <th>College</th>
-                        </tr>
-                    </thead>
-                    </table>
-                </div>   
-
-                <div class="form-group">
-                    <label>Training</label><br>
-                
-                    <label>Courses:</label>
-                    <input type="text" class="form-control">
-                    <label>Duration:</label>
-                    <input type="text" class="form-control">
+    <section class="jobseek bg-cover" class="image">
+      <div class = "container">
+        <div class="wrapper">
+          <form>
+            <div class="form-group">
+              <h3>Personal Information</h3>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name">
                 </div>
-                 
-                    <div class="form-group">
-                      <label>Experiences</label><br>
-                      <label>Post:</label>
-                      <input type="text" class="form-control">
-                      <label>Employer:</label>
-                      <input type="text" class="form-control">
-                      <label>Duration:</label>
-                      <input type="text" class="form-control">
-                      <label>Project:</label>
-                      <input type="text" class="form-control">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+               <div class="form-group">
+        <h3>Gender</h3>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+      </div>
+              <div class="row">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Address">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="tel" class="form-control" placeholder="Telephone no:">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <h3>Highest Degree</h3>
+              <div class="form-row">
+
+                <div class="col-4">
+                  <input type="text" class="form-control" placeholder="Level">
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" placeholder="Year">
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" placeholder="Grades">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <h3>Training</h3>
+              <div class="form-row">
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="Courses">
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="Duration">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+               <h3>Experience</h3>
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Post">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Employer">
+              </div>
+              <div class="col-3">
+                <input type="email" class="form-control" placeholder="Duration">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Project">
+              </div>
+            </div>
+              </div>
+            <div class="form-group">
+            <h3>Skills</h3>
+            <div class="container">
+
+              <input type="radio" class="radio-hide" name="progress" value="ten" id="ten" checked>
+              <label class="label-text" for="ten">Low</label>
+
+              <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty">
+              <label class="label-text" for="fifty">Medium</label>
+
+              <input type="radio" class="radio-hide" name="progress" value="onehundred" id="onehundred">
+              <label class="label-text" for="onehundred">High</label>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+              <h3>Interactivity</h3>
+              <div class="container">
+                  <input type="radio" class="radio-hide" name="progress" value="twentyfive" id="twentyfive">
+                  <label class="label-text" for="twentyfive">Low</label>
+
+                  <input type="radio" class="radio-hide" name="progress" value="sixty" id="sixty">
+                  <label class="label-text" for="sixty">Medium</label>
+
+                  <input type="radio" class="radio-hide" name="progress" value="ninetyfive" id="ninetyfive">
+                  <label class="label-text" for="ninetyfive">High</label>
+                  <div class="progress">
+                      <div class="progress-bar"></div>
                     </div>
-                     <div class="form-group">
-                        <label>Skill</label> 
-                           <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Java</label><br>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Angular</label><br>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Java</label><br>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Java</label>
+              </div>
+          </div>
 
-                        <hr>
-                          </div> 
-                          <button type="button" class="form-button" id="submit">Submit</button>
-
-
-                  </div>
-
-
-           
-  </form>
-  </div>
-  
-  
-  <!-- <router-outlet></router-outlet>  --> 
-   
-  
-  
-  
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
 

@@ -1,0 +1,147 @@
+.jobseeker{
+	padding: 100px 0;
+}
+.jobseeker .wrapper{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px 30px;
+	width: 70%;
+	margin: 0 auto;
+}
+.jobseeker form{
+	padding: 30px 0;
+}
+
+.jobseeker form .row{
+	margin-bottom: 30px;
+}
+.image{
+	background-image: url("E:\ApplicantFiltering\applicant-filtering-system\images\abcd.jpg");
+}
+/*radio button progress bar*/
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Boogaloo', cursive;
+	/* background-color: #e5f3f5; */
+}
+.container{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding: 120px 0px;
+	text-align: center;
+}
+.text-hed{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 100px;
+	text-transform: capitalize;
+	color: black;
+	text-shadow: 0px 0px 3px white;
+	cursor: pointer;
+	animation: text_ani 8s infinite linear;
+}
+.radio-hide{
+	display: none;
+}
+.label-text{
+	padding: 15px 20px;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.8s;
+}
+.radio-hide:checked + .label-text{
+	transition: all 0.2s;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	color: white;
+	background-color: rgba(0,0,0,0.25);
+}
+.progress{
+	width: 50%;
+	margin: 50px auto;
+	height: 35px;
+	padding: 4px;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.25), 0px 1px rgba(255,255,255,0.08);
+}
+.progress-bar{
+	height: 100%;
+	border-radius: 4px;
+	transition: all 0.5s linear;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.3),rgba(255,255,255,0.05));
+	transition-property: width, background-color;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.25), inset 0px 1px rgba(255,255,255,0.1);
+}
+
+#ten:checked ~ .progress > .progress-bar{
+	width: 10%;
+	background-color: #FB0036;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar{
+	width: 25%;
+	background-color: #FF5F00;
+}
+
+#fifty:checked ~ .progress > .progress-bar{
+	width: 50%;
+	background-color: #F8FF00;
+}
+#sixty:checked ~ .progress > .progress-bar{
+	width: 60%;
+	background-color: #F8FF00;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar{
+	width: 75%;
+	background-color: #00FF05;
+}
+
+#eighty:checked ~ .progress > .progress-bar{
+	width: 80%;
+	background-color: #00FF05;
+}
+#ninetyfive:checked ~ .progress > .progress-bar{
+	width: 95%;
+	background-color: #00FF05;
+}
+
+#onehundred:checked ~ .progress > .progress-bar{
+	width: 100%;
+	background-color: #0084FF;
+}
+
+@keyframes text_ani{
+	0%{
+		text-shadow: 0px 0px 3px white;	
+	}
+	20%{
+		text-shadow: 0px 0px 3px #FB0036;	
+	}
+	40%{
+		text-shadow: 0px 0px 3px #FF5F00;	
+	}
+	60%{
+		text-shadow: 0px 0px 3px #F8FF00;	
+	}
+	80%{
+		text-shadow: 0px 0px 3px #00FF05;	
+	}
+	100%{
+		text-shadow: 0px 0px 3px #0084FF;	
+	}
+	
+}
+  
