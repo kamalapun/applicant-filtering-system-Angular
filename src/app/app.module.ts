@@ -10,6 +10,7 @@ import { JobseekerComponent } from './jobseeker/jobseeker.component';
 import { PostjobComponent } from './postjob/postjob.component';
 import { LoginComponent } from './login/login.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     JobseekerComponent,
     PostjobComponent,
     LoginComponent,
-    AboutusComponent
+    AboutusComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

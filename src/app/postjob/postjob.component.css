@@ -16,14 +16,14 @@
 	font-family: 'Boogaloo', cursive;
 	/* background-color: #e5f3f5; */
 }
-.container{
+/* .container{
 	width: 100%;
 	height: auto;
 	justify-content: center;
 	align-items: center;
 	padding: 120px 0px;
-	text-align: center;
-}
+	text-align: left;
+} */
 .text-hed{
 	text-align: center;
 	margin-top: 100px;
@@ -35,6 +35,9 @@
 	animation: text_ani 8s infinite linear;
 }
 .radio-hide{
+	display: none;
+}
+.radio-hide1{
 	display: none;
 }
 .label-text{
@@ -52,8 +55,24 @@
 	color: white;
 	background-color: rgba(0,0,0,0.25);
 }
+.radio-hide1:checked + .label-text{
+	transition: all 0.2s;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	color: white;
+	background-color: rgba(0,0,0,0.25);
+}
 .progress{
 	width: 50%;
+	 margin: 50px auto; 
+	/* height: 35px; */
+	/* padding: 4px; */
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.25), 0px 1px rgba(255,255,255,0.08);
+}
+.progress1{
+	width: 100%;
 	margin: 50px auto;
 	height: 35px;
 	padding: 4px;
@@ -64,7 +83,7 @@
 .progress-bar{
 	height: 100%;
 	border-radius: 4px;
-	transition: all 0.5s linear;
+	/* transition: all 0.5s linear; */
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0.3),rgba(255,255,255,0.05));
 	transition-property: width, background-color;
 	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.25), inset 0px 1px rgba(255,255,255,0.1);
@@ -108,7 +127,7 @@
 	background-color: #0084FF;
 }
 
-@keyframes text_ani{
+/* @keyframes text_ani{
 	0%{
 		text-shadow: 0px 0px 3px white;	
 	}
@@ -128,5 +147,5 @@
 		text-shadow: 0px 0px 3px #0084FF;	
 	}
 	
-}
+} */
   

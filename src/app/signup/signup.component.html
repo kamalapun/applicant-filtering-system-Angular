@@ -3,7 +3,7 @@
     <div class="wrapper">
     <form>
         <div class="form-group">
-        <!-- <input type="txt" class="form-control" placeholder="Your Name"> -->
+        <input type="txt" class="form-control" placeholder="Your Name">
       </div>
       <div class="form-group">
         <input type="email" class="form-control" placeholder="Your Email">
@@ -15,10 +15,13 @@
       <div class="form-group">
        <button type="submit" class="btn btn-primary">Login</button>
       </div>
-      <div class="form-group">
-        <p>Dont have ACCCESS??<a href="#">Sign Up</a></p>
+      <div class="form-group" >
+        <div (click)="redirect()">Dont have ACCCESS??
+          <!-- <a href="#">Sign Up</a> -->
+        </div>
       </div>
     </form>
   </div>
   </div>
   </section>
+

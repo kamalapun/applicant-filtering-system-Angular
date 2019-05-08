@@ -14,6 +14,7 @@
 .jobseeker form .row{
 	margin-bottom: 30px;
 }
+
 .image{
 	background-image: url('abcd.jpg');
 }
@@ -31,30 +32,33 @@
 	font-family: 'Boogaloo', cursive;
 	/* background-color: #e5f3f5; */
 }
-.container{
+/* .container{
 	width: 100%;
 	height: auto;
 	justify-content: center;
 	align-items: center;
 	padding: 120px 0px;
-	text-align: center;
-}
+	text-align: left;
+} */
 .text-hed{
 	text-align: center;
 	margin-top: 100px;
 	font-size: 100px;
 	text-transform: capitalize;
 	color: black;
-	text-shadow: 0px 0px 3px white;
+	text-shadow: 0px 0px 3px rgb(73, 23, 129);
 	cursor: pointer;
 	animation: text_ani 8s infinite linear;
 }
 .radio-hide{
 	display: none;
 }
+.radio-hide1{
+	display: none;
+}
 .label-text{
 	padding: 15px 20px;
-	color: white;
+	color: black;
 	font-size: 20px;
 	font-weight: 500;
 	cursor: pointer;
@@ -67,8 +71,24 @@
 	color: white;
 	background-color: rgba(0,0,0,0.25);
 }
+.radio-hide1:checked + .label-text{
+	transition: all 0.2s;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	color: white;
+	background-color: rgba(0,0,0,0.25);
+}
 .progress{
 	width: 50%;
+	margin: 50px auto;
+	height: 35px;
+	padding: 4px;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.25), 0px 1px rgba(255,255,255,0.08);
+}
+.progress1{
+	width: 100%;
 	margin: 50px auto;
 	height: 35px;
 	padding: 4px;
