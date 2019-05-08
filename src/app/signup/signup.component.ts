@@ -13,8 +13,5 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
 
-  // redirect() {
-  //   this.router.navigate(['./signUp']);
-  // }
 
 }
