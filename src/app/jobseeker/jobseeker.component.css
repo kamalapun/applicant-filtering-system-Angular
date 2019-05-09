@@ -46,15 +46,17 @@
 	font-size: 100px;
 	text-transform: capitalize;
 	color: black;
-	text-shadow: 0px 0px 3px rgb(73, 23, 129);
+	text-shadow: 0px 0px 3px white;
 	cursor: pointer;
 	animation: text_ani 8s infinite linear;
 }
 .radio-hide{
-	display: none;
+	display: none; 
+	visibility: hidden;
 }
 .radio-hide1{
 	display: none;
+	 visibility: hidden; 
 }
 .label-text{
 	padding: 15px 20px;
@@ -80,9 +82,9 @@
 }
 .progress{
 	width: 50%;
-	margin: 50px auto;
-	height: 35px;
-	padding: 4px;
+	 margin: 50px auto; 
+	/* height: 35px; */
+	/* padding: 4px; */
 	background-color: rgba(0,0,0,0.25);
 	border-radius: 5px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.25), 0px 1px rgba(255,255,255,0.08);
@@ -90,8 +92,8 @@
 .progress1{
 	width: 100%;
 	margin: 50px auto;
-	height: 35px;
-	padding: 4px;
+	/* height: 35px; */
+	/* padding: 4px; */
 	background-color: rgba(0,0,0,0.25);
 	border-radius: 5px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.25), 0px 1px rgba(255,255,255,0.08);
@@ -99,7 +101,7 @@
 .progress-bar{
 	height: 100%;
 	border-radius: 4px;
-	transition: all 0.5s linear;
+	transition: all 0.5s linear; 
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0.3),rgba(255,255,255,0.05));
 	transition-property: width, background-color;
 	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.25), inset 0px 1px rgba(255,255,255,0.1);
@@ -143,7 +145,7 @@
 	background-color: #0084FF;
 }
 
-@keyframes text_ani{
+  @keyframes text_ani{ 
 	0%{
 		text-shadow: 0px 0px 3px white;	
 	}
@@ -163,5 +165,4 @@
 		text-shadow: 0px 0px 3px #0084FF;	
 	}
 	
-}
-  
+} 

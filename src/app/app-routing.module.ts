@@ -8,14 +8,13 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  // {path:"",redirectTo:"/page",pathMatch:"full"},
+   {path:"",redirectTo:"/page",pathMatch:"full"},
   { path: "page", component: PageComponent },
   { path: "aboutus", component: AboutusComponent },
   { path: "jobseeker", component: JobseekerComponent },
   { path: "postjob", component: PostjobComponent },
   { path: "login", component: LoginComponent },
-  { path: "signup", component: SignupComponent },
-  {path:"",redirectTo:"/signup",pathMatch:"full"}
+  { path: "signup",component: SignupComponent }
 ];
 
 @NgModule({
