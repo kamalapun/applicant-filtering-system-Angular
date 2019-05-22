@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostjobService } from '../postjob.service';
 
 @Component({
   selector: 'app-postjob',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./postjob.component.css']
 })
 export class PostjobComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(private postjobservice:PostjobService) { }
 
   ngOnInit() {
+  
   }
-
+  
 }
