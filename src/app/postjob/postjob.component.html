@@ -1,6 +1,6 @@
 <section class="jobseek bg-cover">
   <div class="card" style="margin:5vh;padding:10vh">
-    <img class="card-img-top" src="abc.jpg" alt="Card image cap">
+    <!-- <img class="card-img-top" src="abc.jpg" alt="Card image cap"> -->
     <div class="card-body">
       <form>
         <div class="form-group">
@@ -9,11 +9,22 @@
             <div class="col-6">
               <input type="text" class="form-control" placeholder="Company Name">
             </div>
-            <div class="col-6">
+            <!-- <div class="col-6">
               <input type="text" class="form-control" placeholder="Post">
-            </div>
+            </div> -->
           </div>
         </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Post          </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Developer</a>
+              <a class="dropdown-item" href="#">Q.A</a>
+              <a class="dropdown-item" href="#">DBA</a>
+            </div>
+          </div>
+          
         <div class="form-group">
         <h3>Gender</h3>
           <input type="radio" name="gender" value="male"> Male<br>
