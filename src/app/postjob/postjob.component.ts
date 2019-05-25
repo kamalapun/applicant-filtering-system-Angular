@@ -10,7 +10,7 @@ import { PostJob } from '../postjob';
 export class PostjobComponent implements OnInit {
   
   postjobObject = new PostJob();
-  jobList : PostJob[] = [];
+  jobList : PostJob[];
   isEdit:boolean = false;
 
   constructor(private postjobService:PostjobService) { }
