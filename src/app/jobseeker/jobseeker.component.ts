@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Jobseeker } from '../jobseeker';
 import { JobseekerService } from '../jobseeker.service';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-jobseeker',
@@ -12,7 +14,7 @@ export class JobseekerComponent implements OnInit {
   jobseekerList: Jobseeker[];
   isEdit: boolean = false;
 
-  constructor(private jobseekerService: JobseekerService) {
+  constructor(private jobseekerService: JobseekerService,private router :Router) {
 
   }
 
@@ -28,4 +30,15 @@ export class JobseekerComponent implements OnInit {
       this.jobseekerObject = new Jobseeker();
     })
   }
+
+  saveJobseeker(){
+    console.log(this.jobseekerObject);
+    this.jobseekerService.save(this.jobseekerObject).subscribe(res=>{
+      this.getJobSeeker()
+    })
+  }
+
+   goto(){
+     this.router.navigate(['']);
+   }
 }

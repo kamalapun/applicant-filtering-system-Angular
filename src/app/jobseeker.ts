@@ -6,14 +6,14 @@ export class Jobseeker {
         email: string;
         address : string;
         phone:number;
-        highestDegree:string;
-        training: string;
+        qualification:string;
+        jobPost:string;
         experience:number;
         skills:string;
         interactivity:string;
         constructor(id?:number,firstName?: string,lastName?:string,gender?:string,email?: string,
-            address? : string,phone? : number,highestDegree?:string,training? :string,
-            experience?:number,skill?:string,interactivity?:string){
+            address? : string,phone? : number,qualification?:string,jobPost?:string,
+            experience?:number,skills?:string,interactivity?:string){
                 this.id = id ? id :null;
                 this.firstName = firstName ? firstName :'';
                 this.lastName = lastName ? lastName :'';
@@ -21,10 +21,10 @@ export class Jobseeker {
                 this.email = email ? email :'';
                 this.address = address ? address :'';
                 this.phone = phone ? phone :null;
-                this.highestDegree = highestDegree ? highestDegree :'';
-                this.training = training ? training :'';
+                this.qualification = qualification ? qualification :'';
+                this.jobPost = jobPost ? jobPost :'',
                 this.experience = experience ? experience :null;
-                this.skills = skill ? skill :'';
+                this.skills = skills ? skills :'';
                 this.interactivity = interactivity ? interactivity :'';
             }
 }
