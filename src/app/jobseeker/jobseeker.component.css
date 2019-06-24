@@ -22,14 +22,20 @@
 /* @charset "utf-8"; */
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+/* @import url('https://fonts.googleapis.com/css?family=Boogaloo'); */
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-family: 'Boogaloo', cursive;
+
+	/* display: flex;
+	justify-content:space-between; 
+	align-items:flex-start;
+	flex-flow:column wrap; */
+	
+	/* font-family: 'Boogaloo', cursive; */
 	/* background-color: #e5f3f5; */
 }
 /* .container{
