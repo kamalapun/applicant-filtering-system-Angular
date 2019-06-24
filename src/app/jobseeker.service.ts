@@ -11,11 +11,12 @@ export class JobseekerService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getJobSeeker():Observable<any>{
-    return this.httpClient.get<any>(this.baseurl)
-  }
+  // getJobSeeker():Observable<any>{
+  //   return this.httpClient.get<any>(this.baseurl)
+  // }
 
-  save(jobseekerObject : Jobseeker){
-    return this.httpClient.post(this.baseurl,jobseekerObject)
+  save(jobseekerObject : Jobseeker): Observable<any>{
+    console.log("Save:" + jobseekerObject);
+    return this.httpClient.post<any>(this.baseurl,jobseekerObject)
   }
 }

@@ -119,8 +119,22 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" (click)="goto()">Submit</button>
+        <button type="submit" class="btn btn-primary" (click)="saveJobseeker()">Submit</button>
       </form>
     </div>
   </div>
 </section>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h1 *ngIf="isQualified">Qualified</h1>
+    <h1 *ngIf="!isQualified">Not Qualified</h1>
+  </div>
+</ng-template>
+
