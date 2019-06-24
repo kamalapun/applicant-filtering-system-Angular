@@ -1,119 +1,123 @@
 <section class="jobseek bg-cover">
-  <div class="card" style="margin:5vh;padding:10vh">
+  <div class="card" style="margin:3vh;padding:5vh">
     <!-- <img class="card-img-top" src="abc.jpg" alt="Card image cap"> -->
     <div class="card-body">
       <form>
         <div class="form-group">
-          <h3>Company's Information</h3>
           <div class="row">
-            <div class="col-6">
-              <input type="text" class="form-control" placeholder="Company Name">
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>Post</h3>
-          <div class="col-6">
-
-            <div class="dropdown show">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Post
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item">Developer</a>
-                <a class="dropdown-item">Q.A</a>
-                <a class="dropdown-item">DBA</a>
-              </div>
-            </div>
-            <!-- <input type="text" class="form-control" placeholder="Post"> -->
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>Gender</h3>
-          <input type="radio" name="gender" value="male"> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="radio" name="gender" value="other"> Other
-        </div>
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col">
-              <h4> Education</h4>
-
-              <div class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Education
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item">Bachelor</a>
-                  <a class="dropdown-item">Master</a>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Company's Information</h5>
+                  <form class="form-inline">
+                    <label>Company Name</label>
+                    <input type="text" class="form-control" placeholder="Company Name">
+                  </form>
+                  <div class="form-inline">
+                    <label>Experience</label>
+                    <input type="number" class="form-control" placeholder="In Years">
+                  </div>
                 </div>
               </div>
-
-
-              <!-- <input type="text" class="form-control" placeholder="Maximum level"> -->
             </div>
-            <div class="col">
-              <h4>Experience</h4>
-              <input type="number" class="form-control" placeholder="In Years">
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col">
-              <h4>Languages</h4>
-              <input type="text" class="form-control" placeholder="">
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col">
-              <h4>Skills</h4>
-              <div class="container">
-
-                <input type="radio" class="radio-hide" name="progress" value="ten" id="ten" unchecked>
-                <label class="label-text" for="ten">Low</label>
-
-                <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty">
-                <label class="label-text" for="fifty">Medium</label>
-
-                <input type="radio" class="radio-hide" name="progress" value="onehundred" id="onehundred">
-                <label class="label-text" for="onehundred">High</label>
-                <div class="progress">
-                  <div class="progress-bar"></div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Special title treatment</h5> -->
+                  <form class="form-inline">
+                    <label>Languages</label>
+                  <input type="text" class="form-control" placeholder="Languages">
+                  </form>
+                 
+                   <div class="row">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other
+                   </div>
+                
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <h4>Interactivity</h4>
-          <div class="container">
-            <input type="radio" class="radio-hide1" name="progress1" value="twentyfive" id="twentyfive">
-            <label class="label-text" for="twentyfive">Low</label>
-
-            <input type="radio" class="radio-hide1" name="progress1" value="sixty" id="sixty">
-            <label class="label-text" for="sixty">Medium</label>
-
-            <input type="radio" class="radio-hide1" name="progress1" value="ninetyfive" id="ninetyfive">
-            <label class="label-text" for="ninetyfive">High</label>
-            <div class="progress">
-              <div class="progress-bar"></div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Post</h5>
+                  <div class="col">
+                    <select class="selectpicker" data-selected-text-format="count" name="post"
+                    [(ngModel)]="jobpostObject.post">
+                    <option></option>
+                    <option>Developer</option>
+                    <option>Q.A</option>
+                    <option>DBA</option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Education</h5>
+                  <select class="selectpicker" data-selected-text-format="count" name="education"
+                    [(ngModel)]="jobpostObject.education">
+                    <option></option>
+                    <option>Bachelor</option>
+                    <option>Master</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
+
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card w-100">
+                <div class="card-body">
+                  <h5 class="card-title">Skills</h5>
+                  <input type="radio" class="radio-hide" name="progress" value="ten" id="ten" unchecked>
+                  <label class="label-text" for="ten">Low</label>
+
+                  <input type="radio" class="radio-hide" name="progress" value="fifty" id="fifty">
+                  <label class="label-text" for="fifty">Medium</label>
+
+                  <input type="radio" class="radio-hide" name="progress" value="onehundred" id="onehundred">
+                  <label class="label-text" for="onehundred">High</label>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Interactivity</h5>
+                  <input type="radio" class="radio-hide1" name="progress1" value="twentyfive" id="twentyfive">
+                  <label class="label-text" for="twentyfive">Low</label>
+
+                  <input type="radio" class="radio-hide1" name="progress1" value="sixty" id="sixty">
+                  <label class="label-text" for="sixty">Medium</label>
+
+                  <input type="radio" class="radio-hide1" name="progress1" value="ninetyfive" id="ninetyfive">
+                  <label class="label-text" for="ninetyfive">High</label>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">
-            <h3>Description</h3>
-          </label>
+        <div>
+          <label for="exampleFormControlTextarea1"><h5>Description</h5></label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
       </form>
     </div>
   </div>

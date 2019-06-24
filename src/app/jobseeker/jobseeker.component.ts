@@ -39,6 +39,6 @@ export class JobseekerComponent implements OnInit {
   }
 
    goto(){
-     this.router.navigate(['']);
+     this.router.navigate(['home']);
    }
 }

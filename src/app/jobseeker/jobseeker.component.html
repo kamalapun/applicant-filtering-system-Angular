@@ -1,125 +1,145 @@
 <section class="jobseek bg-cover">
-  <div class="card" style="margin:5vh;padding:10vh">
+  <div class="card" style="margin:3vh;padding:5vh">
     <!-- <img class="card-img-top" src="abcd.jpg" alt="Card image cap"> -->
     <div class="card-body">
       <form>
         <div class="form-group">
-          <h3>Personal Information</h3>
           <div class="row">
-            <div class="col">
-              <input type="text" name="firstname" [(ngModel)]="jobseekerObject.firstname" class="form-control"
-                placeholder="First name">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Personal Information</h5>
+                  <form class="form-inline">
+                      <label>Name</label>
+                      <div class="form-group mr-2">
+                          <label class="sr-only" for="inputName">FirstName</label>
+                          <input type="firstname"  name="firstname" [(ngModel)]="jobseekerObject.firstname" class="form-control" id="inputName" placeholder="firstName">
+                      </div>
+                      <div class="form-group mr-2">
+                          <label class="sr-only" for="inputName">LastName</label>
+                          <input type="name" name="lastname" [(ngModel)]="jobseekerObject.lastname" class="form-control" id="inputName" placeholder="lastName">
+                      </div>
+                      </form>
+                    <div class="form-inline">
+                        <label>Email</label>
+                        <input type="email" name="email" [(ngModel)]="jobseekerObject.email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <input type="text" name="lastname" [(ngModel)]="jobseekerObject.lastname" class="form-control"
-                placeholder="Last name">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                 <form class="form-inline">
+                        <label>Address</label> 
+                      <div class="form-group mr-2">
+                        <input type="text" name="address" [(ngModel)]="jobseekerObject.address" class="form-control"
+                        placeholder="Address">
+                    </div>
+                 </form>
+                 <div class="form-inline">
+                        <label >Telephone</label>
+                        <div class="form-group mr-2">
+                            <input type="telephone" name="phone" [(ngModel)]="jobseekerObject.phone" class="form-control"
+                            placeholder="Telephone no:">
+                        </div>
+                      </div>
+
+                      <form class="form-inline">
+                          <div class="row">
+                              <label>Gender</label>
+                              <input type="radio" name="gender" name="male" [(ngModel)]="jobseekerObject.gender" value="male">
+                              Male<br>
+                              <input type="radio" name="gender" name="female" [(ngModel)]="jobseekerObject.gender" value="female">
+                              Female<br>
+                              <input type="radio" name="gender" name="other" [(ngModel)]="jobseekerObject.gender" value="other">
+                              Other
+                          </div>
+                      </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <h3>Gender</h3>
-            <input type="radio" name="gender" name="male" [(ngModel)]="jobseekerObject.gender" value="male"> Male<br>
-            <input type="radio" name="gender" name="female" [(ngModel)]="jobseekerObject.gender" value="female">
-            Female<br>
-            <input type="radio" name="gender" name="other" [(ngModel)]="jobseekerObject.gender" value="other"> Other
-          </div>
+
+
           <div class="row">
-            <div class="col">
-              <input type="email" name="email" [(ngModel)]="jobseekerObject.email" class="form-control"
-                placeholder="Email">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">JobPost</h5>
+                    <select class="selectpicker" data-selected-text-format="count" name="post"
+                    [(ngModel)]="jobseekerObject.post">
+                    <option>Developer</option>
+                    <option>Q.A</option>
+                    <option>DBA</option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Qualification</h5>
+                    <div class="col">
+                        <select class="selectpicker" data-selected-text-format="count" name="qualification"
+                          [(ngModel)]="jobseekerObject.qualification">
+                          <option>Bachelor</option>
+                          <option>Master</option>
+                        </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <input type="text" name="address" [(ngModel)]="jobseekerObject.address" class="form-control"
-                placeholder="Address">
-            </div>
-          </div>
+
           <div class="row">
-            <div class="col">
-              <input type="tel" name="phone" [(ngModel)]="jobseekerObject.phone" class="form-control"
-                placeholder="Telephone no:">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Skills</h5>
+                  <input type="radio" name="low" [(ngModel)]="jobseekerObject.skills" class="radio-hide" name="progress"
+                    value="ten" id="ten" unchecked>
+                  <label class="label-text" for="ten">Low</label>
+
+                  <input type="radio" name="medium" [(ngModel)]="jobseekerObject.skills" class="radio-hide"
+                    name="progress" value="fifty" id="fifty">
+                  <label class="label-text" for="fifty">Medium</label>
+
+                  <input type="radio" name="high" [(ngModel)]="jobseekerObject.skills" class="radio-hide"
+                    name="progress" value="onehundred" id="onehundred">
+                  <label class="label-text" for="onehundred">High</label>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>JobPost</h3>
-          <div class="form-row">
-            <select class="selectpicker" data-selected-text-format="count" name="post" [(ngModel)] = "jobseekerObject.post">
-              <option>Developer</option>
-              <option>Q.A</option>
-              <option>DBA</option>
-            </select>            
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>Qualification</h3>
-          <div class="form-row">
-            <select class="selectpicker" data-selected-text-format="count" name="qualification" [(ngModel)] = "jobseekerObject.qualification">
-              <option>Bachelor</option>
-              <option>Master</option>
-            </select>            
-          </div>
-        </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Interactivity</h5>
+                  <input type="radio" name="low" [(ngModel)]="jobseekerObject.interactivity" class="radio-hide1"
+                    name="progress1" value="twentyfive" id="twentyfive">
+                  <label class="label-text" for="twentyfive">Low</label>
 
-        <!-- <div class="form-group">
-          <h3>Training</h3>
-          <div class="form-row">
-            <div class="col-6">
-              <input type="text" name="Courses" [(ngModel)]="jobseekerObject.Courses" class="form-control"
-                placeholder="Courses">
+                  <input type="radio" name="medium" [(ngModel)]="jobseekerObject.interactivity" class="radio-hide1"
+                    name="progress1" value="sixty" id="sixty">
+                  <label class="label-text" for="sixty">Medium</label>
+
+                  <input type="radio" name="high" [(ngModel)]="jobseekerObject.interactivity" class="radio-hide1"
+                    name="progress1" value="ninetyfive" id="ninetyfive">
+                  <label class="label-text" for="ninetyfive">High</label>
+                  <div class="progress">
+                    <div class="progress-bar"></div>
+                  </div>
+
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-              <input type="text" name="Duration" [(ngModel)]="jobseekerObject.Duration" class="form-control"
-                placeholder="Duration">
-            </div>
-          </div>
-        </div> -->
-        <div class="form-group">
-          <div class="col">
-            <h4>Experience</h4>
-            <input type="number"  name="experience" [(ngModel)]="jobseekerObject.experience" class="form-control" placeholder="In Years">
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>Skills</h3>
-          <div class="container">
-
-            <input type="radio" name="low" [(ngModel)]="jobseekerObject.skills" class="radio-hide" name="progress"
-              value="ten" id="ten" unchecked>
-            <label class="label-text" for="ten">Low</label>
-
-            <input type="radio" name="medium" [(ngModel)]="jobseekerObject.skills" class="radio-hide" name="progress"
-              value="fifty" id="fifty">
-            <label class="label-text" for="fifty">Medium</label>
-
-            <input type="radio" name="high" [(ngModel)]="jobseekerObject.skills" class="radio-hide" name="progress"
-              value="onehundred" id="onehundred">
-            <label class="label-text" for="onehundred">High</label>
-            <div class="progress">
-              <div class="progress-bar"></div>
-            </div>
-          </div>
+          </div> 
         </div>
 
-        <div class="form-group">
-          <h3>Interactivity</h3>
-          <div class="container">
-            <input type="radio" name="low" [(ngModel)]="jobseekerObject.interactivity" class="radio-hide1"
-              name="progress1" value="twentyfive" id="twentyfive">
-            <label class="label-text" for="twentyfive">Low</label>
-
-            <input type="radio" name="medium" [(ngModel)]="jobseekerObject.interactivity" class="radio-hide1"
-              name="progress1" value="sixty" id="sixty">
-            <label class="label-text" for="sixty">Medium</label>
-
-            <input type="radio" name="high" [(ngModel)]="jobseekerObject.interactivity" class="radio-hide1"
-              name="progress1" value="ninetyfive" id="ninetyfive">
-            <label class="label-text" for="ninetyfive">High</label>
-            <div class="progress">
-              <div class="progress-bar"></div>
-            </div>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-primary" (click)="goto()">Submit</button>
+        <button type="submit" class="btn btn-primary btn-lg" (click)="goto()">Submit</button>
       </form>
     </div>
   </div>

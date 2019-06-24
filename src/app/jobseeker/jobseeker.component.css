@@ -14,6 +14,13 @@
 .jobseeker form .row{
 	margin-bottom: 30px;
 }
+.card{
+	border:0ch;
+}
+.btn-lg{
+	width: 100px;
+	height: 75px;
+}
 
 /* .image{
 	background-image: url('abcd.jpg');

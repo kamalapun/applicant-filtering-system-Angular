@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostjobService } from '../postjob.service'
 import { PostJob } from '../postjob';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-postjob',
@@ -13,7 +14,7 @@ export class PostjobComponent implements OnInit {
   jobList : PostJob[];
   isEdit:boolean = false;
 
-  constructor(private postjobService:PostjobService) { }
+  constructor(private postjobService:PostjobService,private router:Router) { }
 
   ngOnInit() {
     this.getCompany();
@@ -26,8 +27,13 @@ export class PostjobComponent implements OnInit {
       this.jobList = res;
       this.postjobObject = new PostJob();
      })
+  } 
+
+  saveCompany(){
+    console.log(this.postjobObject);
+    this.postjobService.save(this.postjobObject).subscribe(res=>{
+      this.getCompany()
+    })
   }
 
-
-  
 }

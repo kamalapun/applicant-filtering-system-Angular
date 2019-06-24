@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { PostJob } from './postjob';
 
 
 @Injectable({
@@ -14,8 +15,8 @@ export class PostjobService {
   getCompany():Observable<any>{
     return this.httpClient.get<any>(this.baseurl)
   }
-
-
-
+  save(postJobObject : PostJob){
+    return this.httpClient.post(this.baseurl,postJobObject)
+  }
 
 }

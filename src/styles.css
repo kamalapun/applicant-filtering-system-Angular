@@ -203,7 +203,7 @@ header li:hover{
 	margin: 0 auto;
 }
 .jobseek form{
-	padding: 50px 0;
+	padding: 40px 0;
 }
 .jobseek form .row{
 	margin-bottom: 30px;
@@ -219,8 +219,10 @@ header li:hover{
 	padding: 20px;
 }
 .postjob form{
-	padding-top: 100px;
-	padding-bottom: 100px;
-}.postjob form .row{
+	padding: 40px 0;
+	/* padding-top: 100px;
+	padding-bottom: 100px; */
+}
+.postjob form .row{
 	margin-bottom: 30px;
 }
