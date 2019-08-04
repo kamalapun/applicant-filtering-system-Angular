@@ -45,6 +45,14 @@ export class JobseekerComponent implements OnInit {
       this.jobseekerList = res;
       console.log(res);
       console.log(typeof(res))
+
+      // if(res ===1){
+      //   this.open(this.input);
+      //   this.isQualified = true;
+      // }else{
+      //   this.open(this.input);
+      //   this.isQualified = false;
+      // }
     })
   }
 
