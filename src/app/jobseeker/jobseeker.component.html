@@ -133,8 +133,30 @@
     </button>
   </div>
   <div class="modal-body">
-    <h1 *ngIf="isQualified">Qualified</h1>
-    <h1 *ngIf="!isQualified">Not Qualified</h1>
+    <!-- <h1 *ngIf="isQualified">Qualified</h1>
+    <h1 *ngIf="!isQualified">Not Qualified</h1> -->
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Job Post</th>
+        <th>Qualification</th>
+        <th>Experience</th>
+        <th>Skill</th>
+        <th>Interactivity</th>
+      </tr>
+      <tr *ngFor="let data of jobseekerList">
+          <th>{{data.id}}</th>
+          <th>{{data.name}}</th>
+          <th>{{data.emailAddress}}</th>
+          <th>{{data.jobPost}}</th>
+          <th>{{data.qualification}}</th>
+          <th>{{data.experience}}</th>
+          <th>{{data.skill}}</th>
+          <th>{{data.interactivity}}</th>
+      </tr>
+    </table>
+
   </div>
 </ng-template>
-

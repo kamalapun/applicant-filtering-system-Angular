@@ -13,7 +13,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class JobseekerComponent implements OnInit {
   jobseekerObject = new Jobseeker();
-  jobseekerList: Jobseeker[];
+  jobseekerList: any[];
   isEdit: boolean = false;
   closeResult: string;
   isQualified: boolean = false;
@@ -45,14 +45,6 @@ export class JobseekerComponent implements OnInit {
       this.jobseekerList = res;
       console.log(res);
       console.log(typeof(res))
-
-      if(res === 1){
-        this.open(this.input);
-        this.isQualified = true;
-      }else{
-        this.open(this.input)
-        this.isQualified = false;
-      }
     })
   }
 
@@ -62,7 +54,7 @@ export class JobseekerComponent implements OnInit {
 
    open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
+      this.closeResult =`Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
